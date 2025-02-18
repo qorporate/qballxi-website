@@ -6,8 +6,19 @@
         <title>QBall XI - Coming Soon!</title>
     </head>
     <body>
-        <h1>This site is under construction.</h1>
-        <p>Please check back later!</p>
+        <div class="container">
+            <h1>This site is under construction.</h1>
+            <p>Please check back later!</p>
+
+            <div class="redirect-section">
+                <h2>Looking for QSet?</h2>
+                <button
+                    onclick="window.location.href='https://qset.qballxi.com'"
+                >
+                    Go to QSet
+                </button>
+            </div>
+        </div>
     </body>
     <style>
         *,
@@ -15,12 +26,37 @@
         *::after {
             box-sizing: border-box;
         }
-
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            margin: 20px auto;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            text-align: center;
             padding: 20px;
+        }
+        .redirect-section {
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #0056b3;
         }
     </style>
 </html>
