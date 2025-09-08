@@ -20,6 +20,6 @@
 		{#if description}
 			<p class="font-semibold text-qset-subtitle">{description}</p>
 		{/if}
-		<a class="font-bold text-qset-green underline" href={link}>{linkText}</a>
+		<a class="font-bold text-qset-green underline" target="_blank" href={link}>{linkText}</a>
 	</div>
 </div>
