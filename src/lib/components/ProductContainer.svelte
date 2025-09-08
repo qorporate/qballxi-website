@@ -6,11 +6,11 @@
 		title: string;
 		description: string;
 		href: string;
-		hoverColor: string;
 		class?: string;
+		innerClass?: string;
 	}
 
-	const { imageSrc, title, description, href, hoverColor, class: className }: Props = $props();
+	const { imageSrc, title, description, href, class: className, innerClass }: Props = $props();
 </script>
 
 <div class={cn('h-[500px] cursor-pointer rounded-4xl border-1 border-gray-300 p-2', className)}>
@@ -19,7 +19,10 @@
 		style="background-image: url({imageSrc}); background-size: cover; background-position: 50%;"
 	>
 		<div
-			class="group absolute bottom-0 flex h-[35%] w-full flex-col justify-between rounded-3xl bg-white p-6 transition-all duration-500 ease-in-out hover:h-full hover:{hoverColor}"
+			class={cn(
+				'group absolute bottom-0 flex h-[35%] w-full flex-col justify-between rounded-3xl bg-white p-6 transition-all duration-500 ease-in-out hover:h-full',
+				innerClass
+			)}
 		>
 			<div>
 				<h1 class="text-xl font-bold group-hover:text-white md:text-[32px]">{title}</h1>

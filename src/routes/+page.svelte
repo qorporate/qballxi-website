@@ -31,22 +31,22 @@
 			title="QBall"
 			description="Find your perfect football venue with QBall."
 			href="#"
-			hoverColor="bg-blue-400"
+			innerClass="hover:bg-blue-400"
 		/>
 		<ProductContainer
 			imageSrc={qset}
 			title="QSet"
 			description="Manage your pickup football games with QSet."
 			href="https://qset.qballxi.com"
-			hoverColor="bg-qset-green"
+			innerClass="hover:bg-qset-green"
 		/>
 		<ProductContainer
 			imageSrc={qballAdmin}
 			title="QBall Admin"
 			description="Manage your football venues with QBall Admin."
 			href="https://admin.qballxi.com"
-			hoverColor="bg-purple-400"
 			class="sm:col-span-2"
+			innerClass="hover:bg-purple-400"
 		/>
 	</article>
 
