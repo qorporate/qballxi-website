@@ -16,10 +16,12 @@
 	</div>
 
 	<div>
-		<h1 class="text-xl sm:text-2xl font-bold">{title}</h1>
+		<h1 class="text-xl font-bold sm:text-2xl">{title}</h1>
 		{#if description}
 			<p class="font-semibold text-qset-subtitle">{description}</p>
 		{/if}
-		<a class="text-sm sm:text-base font-bold text-qset-green underline" target="_blank" href={link}>{linkText}</a>
+		<a class="text-sm font-bold text-qset-green underline sm:text-base" target="_blank" href={link}
+			>{linkText}</a
+		>
 	</div>
 </div>
