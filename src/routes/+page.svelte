@@ -2,6 +2,7 @@
 	import { COMPANY_NAME } from '$lib/constants';
 	import qball_favicon from '$lib/assets/logos/qball-favicon-192x192.png';
 	import SocialGridItem from '$lib/components/SocialGridItem.svelte';
+	import ProductContainer from '$lib/components/ProductContainer.svelte';
 </script>
 
 <main class="mx-auto flex max-w-6xl flex-col gap-4 p-10">
@@ -11,7 +12,7 @@
 	</nav>
 
 	<article class="flex flex-col items-center gap-4 border-b-1 border-gray-300 py-6">
-		<p class="w-fit rounded-3xl bg-qset-bg-gray p-4 font-semibold text-qset-green">Our Services</p>
+		<p class="w-fit rounded-3xl bg-qset-bg-gray p-4 font-semibold text-qset-green">Our Products</p>
 		<p class="text-center text-4xl font-bold">
 			We build solutions to improve your football experience.
 		</p>
@@ -21,7 +22,14 @@
 	</article>
 
 	<!-- Products in a grid -->
-	<article></article>
+	<article>
+		<ProductContainer
+			imageSrc="https://placehold.co/300"
+			title="Product 1"
+			description="Description for Product 1"
+			href="/products/1"
+		/>
+	</article>
 
 	<!-- Socials -->
 	<article class="flex flex-col justify-center gap-6 lg:flex-row lg:items-center">
