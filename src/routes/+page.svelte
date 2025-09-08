@@ -22,25 +22,45 @@
 	</article>
 
 	<!-- Products in a grid -->
-	<article>
+	<article class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
 		<ProductContainer
 			imageSrc="https://placehold.co/300"
 			title="Product 1"
 			description="Description for Product 1"
 			href="/products/1"
+			hoverColor="bg-blue-400"
+		/>
+		<ProductContainer
+			imageSrc="https://placehold.co/300"
+			title="Product 2"
+			description="Description for Product 2"
+			href="/products/2"
+			hoverColor="bg-qset-green"
+		/>
+		<ProductContainer
+			imageSrc="https://placehold.co/300"
+			title="Product 3"
+			description="Description for Product 3"
+			href="/products/3"
+			hoverColor="bg-purple-400"
+			class="sm:col-span-2"
 		/>
 	</article>
 
 	<!-- Socials -->
 	<article class="flex flex-col justify-center gap-6 lg:flex-row lg:items-center">
-		<div class="flex flex-col gap-3">
-			<p class="w-fit rounded-3xl bg-qset-bg-gray px-6 py-3 font-semibold text-qset-green">
+		<div class="flex flex-col items-center gap-3 lg:items-start">
+			<p
+				class="w-fit rounded-3xl bg-qset-bg-gray px-6 py-3 text-sm font-semibold text-qset-green sm:text-base"
+			>
 				Socials
 			</p>
-			<p class="text-4xl font-bold">Connect With Us</p>
-			<p class="text-qset-subtitle">Join our community!</p>
+			<h1 class="text-center text-xl font-bold lg:text-left lg:text-4xl">Connect With Us</h1>
+			<p class="text-center text-sm text-qset-subtitle lg:text-left">Join our community!</p>
 		</div>
-		<div class="flex flex-col gap-6 bg-[#fafafa] px-5 py-28 sm:grid sm:grid-cols-2">
+		<div
+			class="flex flex-col gap-6 rounded-4xl bg-[#fafafa] px-5 py-10 sm:grid sm:grid-cols-2 sm:py-28"
+		>
 			<SocialGridItem
 				title="Follow us on Twitter"
 				icon="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjEyMjciIHZpZXdCb3g9IjAgMCAxMjAwIDEyMjciIGZpbGw9Im5vbmUiPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8xXzIpIj48cGF0aCBkPSJNNzE0LjE2MyA1MTkuMjg0TDExNjAuODkgMEgxMDU1LjAzTDY2Ny4xMzcgNDUwLjg4N0wzNTcuMzI4IDBIMEw0NjguNDkyIDY4MS44MjFMMCAxMjI2LjM3SDEwNS44NjZMNTE1LjQ5MSA3NTAuMjE4TDg0Mi42NzIgMTIyNi4zN0gxMjAwTDcxNC4xMzcgNTE5LjI4NEg3MTQuMTYzWk01NjkuMTY1IDY4Ny44MjhMNTIxLjY5NyA2MTkuOTM0TDE0NC4wMTEgNzkuNjk0NEgzMDYuNjE1TDYxMS40MTIgNTE1LjY4NUw2NTguODggNTgzLjU3OUwxMDU1LjA4IDExNTAuM0g4OTIuNDc2TDU2OS4xNjUgNjg3Ljg1NFY2ODcuODI4WiIgZmlsbD0iYmxhY2siLz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSJjbGlwMF8xXzIiPjxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjEyMjciIGZpbGw9IndoaXRlIi8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+"
