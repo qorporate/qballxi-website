@@ -32,7 +32,7 @@
 			<p class="text-4xl font-bold">Connect With Us</p>
 			<p class="text-qset-subtitle">Join our community!</p>
 		</div>
-		<div class="flex flex-col gap-4 bg-[#fafafa] px-5 py-36 sm:grid sm:grid-cols-2">
+		<div class="flex flex-col gap-6 bg-[#fafafa] px-5 py-28 sm:grid sm:grid-cols-2">
 			<SocialGridItem
 				title="Follow us on Twitter"
 				icon="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjEyMjciIHZpZXdCb3g9IjAgMCAxMjAwIDEyMjciIGZpbGw9Im5vbmUiPjxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8xXzIpIj48cGF0aCBkPSJNNzE0LjE2MyA1MTkuMjg0TDExNjAuODkgMEgxMDU1LjAzTDY2Ny4xMzcgNDUwLjg4N0wzNTcuMzI4IDBIMEw0NjguNDkyIDY4MS44MjFMMCAxMjI2LjM3SDEwNS44NjZMNTE1LjQ5MSA3NTAuMjE4TDg0Mi42NzIgMTIyNi4zN0gxMjAwTDcxNC4xMzcgNTE5LjI4NEg3MTQuMTYzWk01NjkuMTY1IDY4Ny44MjhMNTIxLjY5NyA2MTkuOTM0TDE0NC4wMTEgNzkuNjk0NEgzMDYuNjE1TDYxMS40MTIgNTE1LjY4NUw2NTguODggNTgzLjU3OUwxMDU1LjA4IDExNTAuM0g4OTIuNDc2TDU2OS4xNjUgNjg3Ljg1NFY2ODcuODI4WiIgZmlsbD0iYmxhY2siLz48L2c+PGRlZnM+PGNsaXBQYXRoIGlkPSJjbGlwMF8xXzIiPjxyZWN0IHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjEyMjciIGZpbGw9IndoaXRlIi8+PC9jbGlwUGF0aD48L2RlZnM+PC9zdmc+"
