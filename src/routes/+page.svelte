@@ -1,9 +1,6 @@
 <script lang="ts">
-	import { COMPANY_NAME } from '$lib/constants';
+	import { COMPANY_NAME, QBALL_PRODUCT, QBALL_ADMIN_PRODUCT, QSET_PRODUCT } from '$lib/constants';
 	import qball_favicon from '$lib/assets/logos/qball-favicon-192x192.png';
-	import qball from '$lib/assets/products/qball.png';
-	import qset from '$lib/assets/products/qset.png';
-	import qballAdmin from '$lib/assets/products/qballAdmin.png';
 	import SocialGridItem from '$lib/components/SocialGridItem.svelte';
 	import ProductContainer from '$lib/components/ProductContainer.svelte';
 </script>
@@ -27,21 +24,21 @@
 	<!-- Products in a grid -->
 	<article class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-2">
 		<ProductContainer
-			imageSrc={qball}
-			title="QBall"
+			imageSrc={QBALL_PRODUCT}
+			title="QBall (Coming Soon)"
 			description="Find your perfect football venue with QBall."
 			href="#"
 			innerClass="hover:bg-blue-400"
 		/>
 		<ProductContainer
-			imageSrc={qset}
+			imageSrc={QSET_PRODUCT}
 			title="QSet"
 			description="Manage your pickup football games with QSet."
 			href="https://qset.qballxi.com"
 			innerClass="hover:bg-qset-green"
 		/>
 		<ProductContainer
-			imageSrc={qballAdmin}
+			imageSrc={QBALL_ADMIN_PRODUCT}
 			title="QBall Admin"
 			description="Manage your football venues with QBall Admin."
 			href="https://admin.qballxi.com"
