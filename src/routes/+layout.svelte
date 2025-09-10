@@ -3,9 +3,18 @@
 	import qball_favicon from '$lib/assets/logos/qball-favicon-192x192.png';
 	import { page } from '$app/state';
 	import { COMPANY_NAME, QBALL_LOGO } from '$lib/constants';
+	import posthog from 'posthog-js';
+	import { browser, dev } from '$app/environment';
+	import { afterNavigate, beforeNavigate } from '$app/navigation';
 
 	const DESCRIPTION = `${COMPANY_NAME} - Dare To Dream`;
 	const SITE_URL = `${page.url.href}`;
+
+	if (browser && !dev) {
+		beforeNavigate(() => posthog.capture('$pageleave'));
+		afterNavigate(() => posthog.capture('$pageview'));
+	}
+
 	let { children } = $props();
 </script>
 
