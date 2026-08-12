@@ -38,6 +38,6 @@
 		"vite-plugin-devtools-json": "^1.0.0"
 	},
 	"dependencies": {
-		"posthog-js": "^1.262.0"
+		"posthog-js": "1.415.7"
 	}
 }
